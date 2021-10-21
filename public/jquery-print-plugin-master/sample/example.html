@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery PrintThis Example</title>
+    </head>
+    <body>
+        <div id="div_to_print">
+            <h4>I love printThis jQuery plugin!!!</h4>
+        </div>
+        <button type="button" id="print_btn">Print</button>
+        <script src="../lib/jquery-2.1.4.min.js"></script>
+        <script src="../lib/jquery.printThis.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(e) {
+               $('button#print_btn').on('click', function(e)  {
+                    $('#div_to_print').printThis();
+               }); 
+            });
+        </script>
+    </body>
+</html>
